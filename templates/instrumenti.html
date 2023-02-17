@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block title %} 
+Galvena lapa
+
+{% endblock %}
+
+{% block body %}
+<h1>Instrumenti</h1>
+    <div>
+        <form method="post">
+            <input type="text" name="id_instruments" id="id_instruments" placeholder="instrumenta ID"><br>
+            <input type="text" name="instruments" id="instruments" placeholder="instrumenta nosaukums"><br>
+            <input type="text" name="data" id="data" placeholder="nomas Data"><br>
+            <input type="text" name="cena" id="cena" placeholder="nomas cena"><br>
+            <input class="button" type="submit" value="Sūtit"><br>    
+        </form>
+    </div>
+<div>{%  for el in rows  %}
+
+<table>
+<tr>
+<!--   <td>{{ el[0] }}</td>
+  <td>{{ el[1] }}</td>
+  <td>{{ el[2] }}</td>
+  <td>{{ el[3] }}</td> -->
+  <td>{{ el[4] }}</td>
+  <td>{{ el[5] }}</td>
+  <td>{{ el[6] }}</td>
+<!--   <td>{{ el[7] }}</td> -->
+  <td>{{ el[8] }}</td>
+  <td>{{ el[9] }}</td>
+  <td>{{ el[10] }}</td>
+  
+</tr>
+</table>
+
+{% endfor %}</div>
+{% endblock %} 
+

@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block title %} 
+Skatit rezultāts
+
+{% endblock %}
+
+{% block body %}
+
+
+
+<table>
+<tr>
+  <td>Vārds</td>
+  <td>Uzvārds</td>
+  <td>instruments</td>
+  <td>Data</td>
+</tr>
+  {%  for el in rows  %}
+<tr>
+  <td>{{ el[0] }}</td>
+  <td>{{ el[1] }}</td>
+  <td>{{ el[2] }}</td>
+  <td>{{ el[3] }}</td>
+</tr>
+  {% endfor %}
+</table>
+
+
+{% endblock %} 
+

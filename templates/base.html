@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} {% endblock %}</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+</head>
+<body>
+    <h1>SIA "Instrumentu NOMA"</h1>
+ <div > 
+        <nav>
+          <a href="/">Galvena</a>
+          <a href="/nomnieks">Pievienot nomnieka</a>
+          <a href="instrumenti">Pievienot instruments</a>
+          <a href="/noma">Noformnet nomu</a>
+          <a href="/kopa">Skātit rezultāts</a>
+        </nav>
+      </div> 
+    {% block body %} 
+    
+    {% endblock %} 
+  <footer>
+  <p>Author:<br>
+  <a href="mailto:/#">name@example.com</a></p>
+</footer> 
+</body>
+</html>
