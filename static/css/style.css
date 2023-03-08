@@ -4,8 +4,7 @@ body {
   font-size: 14px;
   line-height: 18px;
   color: #000000;
-  background:#74a7fe ;
-   
+  background:#74a7fe ;  
 }
 
 img {
@@ -19,7 +18,6 @@ div {
 text-align: center;
 width:100%;
 height: 30px;
-
 }
 
 h1 {
@@ -59,17 +57,15 @@ td {
 
 
 .button {
-    background-color: #8aafeb;
+    background-color: #ebebeb;
     border: none;
-    color: white;
+    color: #371a94;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-    
-    
 }
 
 footer {

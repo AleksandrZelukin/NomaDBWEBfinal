@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block title %} 
+Skatit rezultāts
+
+{% endblock %}
+
+{% block body %}
+
+
+
+<table>
+<tr>
+  <td>Nomnieka ID</td>
+  <td>Vārds</td>
+  <td>Uzvārds</td>
+  <td>Talrunis</td>
+</tr>
+  {%  for el in rows  %}
+<tr>
+  <td>{{ el[0] }}</td>
+  <td>{{ el[1] }}</td>
+  <td>{{ el[2] }}</td>
+  <td>{{ el[3] }}</td>
+</tr>
+  {% endfor %}
+</table>
+
+<div><a class="button" href="/nomnieks">Jauns nomnieks</a>
+  <a class="button" href="/nomn_dzest">Dzest ieraksts</a></div>
+<form method="post">
+<input type="text" name="id_nomnieks" id="id_nomnieks" placeholder="norādi nomnieka ID"><br>
+<input class="button" type="submit" value="Sūtit"><br>  
+
+{% endblock %} 
+

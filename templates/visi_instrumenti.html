@@ -11,12 +11,10 @@ Skatit rezultāts
 
 <table>
 <tr>
-  <td>Vārds</td>
-  <td>Uzvārds</td>
-  <td>instruments</td>
-  <td>Modelis</td>
-  <td>Nomas sakums</td>
-  <td>Nomas beidzas</td>
+  <td>Instrumenta ID</td>
+  <td>Nosaukums</td>
+  <td>Instrumenta Modelis</td>
+  <td>Nomas cena (EUR)</td>
 </tr>
   {%  for el in rows  %}
 <tr>
@@ -24,12 +22,10 @@ Skatit rezultāts
   <td>{{ el[1] }}</td>
   <td>{{ el[2] }}</td>
   <td>{{ el[3] }}</td>
-  <td>{{ el[4] }}</td>
-  <td>{{ el[5] }}</td>
 </tr>
   {% endfor %}
 </table>
 
-
+<div><a class="button" href="instrumenti">Jauns instruments</a></div>
 {% endblock %} 
 
