@@ -1,5 +1,5 @@
 # https://metanit.com/sql/sqlite/3.1.php
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect
 import sqlite3
 
 app = Flask(__name__)
@@ -47,6 +47,7 @@ def nomnieki():
         sql.execute("INSERT INTO nomnieks(vards,uzvards,talrunis) VALUES(?,?,?)",a)
         db.commit()
     return render_template('nomnieks.html')
+    # return redirect('/')
 
 @app.route('/instrumenti', methods=['POST', 'GET'])
 def instrumenti():
