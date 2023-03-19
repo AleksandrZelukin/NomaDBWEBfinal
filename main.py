@@ -63,7 +63,7 @@ def instrumenti():
         rez = sql.fetchall()
         db.close()
     return render_template('instrumenti.html')
-    return render_template('instrumenti.html',rows = rez)
+    # return render_template('instrumenti.html',rows = rez)
 
 @app.route('/noma', methods=['POST', 'GET'])
 def noma():
