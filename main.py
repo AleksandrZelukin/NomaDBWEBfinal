@@ -18,14 +18,15 @@ sql.execute("""CREATE TABLE IF NOT EXISTS instrumenti (
     instruments TEXT,
     marka TEXT,
     cena TEXT
+    data_in TEXT,
+    data_out TEXT,
+    piejamiba TEXT
  )""")
 
 sql.execute("""CREATE TABLE IF NOT EXISTS noma (
     id_noma INTEGER PRIMARY KEY AUTOINCREMENT,
     id_nomnieks INTEGER,
     id_instruments INTEGER,
-    data_in TEXT,
-    data_out TEXT,
     FOREIGN KEY("id_instruments") REFERENCES "Instrumenti"("id_instruments"),
     FOREIGN KEY("id_nomnieks") REFERENCES "Nomnieks"("id_nomnieks")
  )""")

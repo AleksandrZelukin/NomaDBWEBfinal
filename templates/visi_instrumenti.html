@@ -15,6 +15,9 @@ Skatit rezultāts
   <td>Nosaukums</td>
   <td>Instrumenta Modelis</td>
   <td>Nomas cena (EUR)</td>
+  <td>Izsniegts</td>
+  <td>Pieņemts</td>
+  <td>Piejamība</td>
 </tr>
   {%  for el in rows  %}
 <tr>
@@ -22,6 +25,9 @@ Skatit rezultāts
   <td>{{ el[1] }}</td>
   <td>{{ el[2] }}</td>
   <td>{{ el[3] }}</td>
+  <td>{{ el[4] }}</td>
+  <td>{{ el[5] }}</td>
+  <td>{{ el[6] }}</td>
 </tr>
   {% endfor %}
 </table>
